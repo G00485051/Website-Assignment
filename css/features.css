@@ -1,0 +1,197 @@
+/* ===== FEATURES.HTML — СТИЛИ СТРАНИЦЫ FEATURES ===== */
+ 
+.features-page {
+  padding: 50px 0 70px 0;
+}
+ 
+.features-container {
+  width: 90%;
+  margin: 0 auto;
+}
+ 
+/* --- Features Header --- */
+.features-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+ 
+.features-header h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+ 
+.features-header p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #e8e8e8;
+  margin: 0;
+}
+ 
+/* --- Feature Cards --- */
+.features-cards {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    align-items: center;
+    margin: 0 auto;
+}
+ 
+.feature-card {
+  border: 2px solid #6805fb;
+  border-radius: 28px;
+  padding: 10px 30px;
+  background-color: transparent;
+  box-shadow: 0 0 18px rgba(104, 5, 251, 0.18);
+  max-width: 900px;
+}
+ 
+.feature-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+ 
+.feature-card h3 {
+  font-size: 25px;
+  margin: 0 0 14px 0;
+  color: #ffffff;
+}
+ 
+.feature-card p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 0;
+  color: #ffffff;
+}
+ 
+.feature-card i {
+  color: #ffffff;
+  margin-right: 12px;
+  font-size: 20px;
+}
+ 
+ 
+/* ===================== */
+/* === RESPONSIVE ====== */
+/* ===================== */
+ 
+/* Ноутбук (до 992px) */
+@media (max-width: 992px) {
+  .features-cards {
+    width: 90%;
+  }
+}
+ 
+/* Телефон (до 576px) */
+@media (max-width: 576px) {
+  .features-header h1 {
+    font-size: 28px;
+  }
+ 
+  .features-header p {
+    font-size: 16px;
+  }
+ 
+  .features-cards {
+    width: 100%;
+    gap: 40px;
+  }
+ 
+  .feature-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+ 
+  .feature-card h3 {
+    font-size: 20px;
+  }
+ 
+  .feature-card p {
+    font-size: 16px;
+  }
+}
+ 
+/* === COMPARISON TABLE === */
+.compare-section {
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 1px solid #6805fb;
+}
+ 
+.compare-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+ 
+.compare-subtitle {
+    text-align: center;
+    color: #e8e8e8;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+ 
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+ 
+.compare-table thead tr {
+    background-color: #6805fb;
+}
+ 
+.compare-table thead th {
+    padding: 16px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+ 
+.compare-table thead th:first-child {
+    text-align: left;
+}
+ 
+.compare-table tbody tr {
+    border-bottom: 1px solid rgba(104, 5, 251, 0.25);
+    transition: background-color 0.2s;
+}
+ 
+.compare-table tbody tr:hover {
+    background-color: rgba(104, 5, 251, 0.08);
+}
+ 
+.compare-table tbody td {
+    padding: 14px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+ 
+.compare-table tbody td:first-child {
+    text-align: left;
+    font-weight: 500;
+}
+ 
+/* ✓ green, ✗ red */
+.compare-table tbody td:nth-child(2),
+.compare-table tbody td:nth-child(3),
+.compare-table tbody td:nth-child(4) {
+    font-size: 20px;
+}
+ 
+/* Responsive table */
+@media (max-width: 576px) {
+    .compare-title {
+        font-size: 24px;
+    }
+ 
+    .compare-table thead th,
+    .compare-table tbody td {
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+}

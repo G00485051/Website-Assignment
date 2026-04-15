@@ -1,0 +1,183 @@
+.contact-page {
+  padding: 60px 0;
+}
+ 
+.contact-box {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #6805fb;
+    border-radius: 20px;
+    padding: 50px 40px;
+    background-color: #100d13;
+    box-shadow: 0 0 40px rgba(104, 5, 251, 0.2);
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+ 
+.contact-form h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+ 
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ffffff;
+}
+ 
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 0.5px solid #6805fb;
+  border-radius: 8px;
+  background-color: #14142a;
+  color: #ffffff;
+  outline: none;
+}
+ 
+.contact-form textarea {
+  resize: none;
+}
+ 
+/* --- Form Layout --- */
+.form-row {
+  display: flex;
+  gap: 30px;
+}
+ 
+.form-group {
+  flex: 1;
+}
+ 
+.small-box {
+  max-width: 140px;
+}
+ 
+/* --- Submit Button --- */
+.submit-btn {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: 1px solid #6805fb;
+  border-radius: 10px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+ 
+.submit-btn:hover {
+  box-shadow: 0 0 15px #6805fb;
+}
+ 
+ 
+/* ===================== */
+/* === RESPONSIVE ====== */
+/* ===================== */
+ 
+/* Ноутбук (до 992px) */
+@media (max-width: 992px) {
+  .contact-box {
+    padding: 30px 20px;
+  }
+}
+ 
+/* Телефон (до 576px) */
+@media (max-width: 576px) {
+  .contact-box {
+    width: 95%;
+    padding: 20px 15px;
+  }
+ 
+  .contact-form {
+    max-width: 100%;
+  }
+ 
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+ 
+  .small-box {
+    max-width: 100%;
+  }
+ 
+  .contact-form h2 {
+    font-size: 22px;
+  }
+ 
+  .submit-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+ 
+/* === RADIO BUTTONS === */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+ 
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #ffffff;
+}
+ 
+.radio-label input[type="radio"] {
+    width: auto;
+    accent-color: #6805fb;
+    cursor: pointer;
+}
+ 
+/* === CHECKBOXES === */
+.checks {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.check input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    accent-color: #6805fb;
+    cursor: pointer;
+    flex-shrink: 0;
+    order: -1;
+}
+ 
+/* === REQUIRED STAR === */
+.required-star {
+    color: #6805fb;
+    font-weight: bold;
+}

@@ -1,0 +1,174 @@
+/* ===== INDEX.HTML — СТИЛИ ГЛАВНОЙ СТРАНИЦЫ ===== */
+ 
+/* --- Hero Section --- */
+.hero-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.hero-left {
+  width: 60%;
+}
+ 
+.hero-right {
+  width: 50%;
+  text-align: right;
+}
+ 
+.hero-img {
+  max-width: 100%;
+  height: auto;
+}
+ 
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+ 
+.title span {
+  color: #6805fb;
+}
+ 
+.hero-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+ 
+/* --- Index Preview Cards --- */
+.index-preview {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+ 
+.index-card {
+  width: 350px;
+  min-height: 150px;
+  border: 2px solid #6805fb;
+  border-radius: 30px;
+  padding: 25px 20px;
+  background-color: transparent;
+  box-shadow: 0 0 18px rgba(104, 5, 251, 0.18);
+}
+ 
+.index-card h3 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #6805fb;
+    font-family: 'Archivo Black', sans-serif;
+}
+ 
+.index-card p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  color: #ffffff;
+}
+ 
+.index-card i {
+  color: #ffffff;
+  margin-right: 12px;
+  font-size: 20px;
+}
+ 
+ 
+/* ===================== */
+/* === RESPONSIVE ====== */
+/* ===================== */
+ 
+/* Ноутбук / маленький десктоп (до 992px) */
+@media (max-width: 992px) {
+  .hero-box {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    text-align: center;
+  }
+ 
+  .hero-buttons {
+    justify-content: center;
+  }
+ 
+  .hero-img {
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+ 
+/* Телефон (до 576px) */
+@media (max-width: 576px) {
+  .title {
+    font-size: 24px;
+  }
+ 
+  .hero-img {
+    max-width: 90%;
+  }
+ 
+  .index-preview {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .index-card {
+    width: 100%;
+    max-width: 400px;
+  }
+ 
+  .index-card h3 {
+    font-size: 20px;
+  }
+ 
+  .index-card p {
+    font-size: 16px;
+  }
+}
+ 
+/* === VIDEO SECTION === */
+.video-section {
+    margin-top: 70px;
+    text-align: center;
+}
+ 
+.video-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ 
+.video-subtitle {
+    color: #e8e8e8;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+ 
+.video-wrapper {
+    border: 2px solid #6805fb;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(104, 5, 251, 0.3);
+    max-width: 700px;
+    margin: 0 auto;
+}
+ 
+.video-wrapper iframe {
+    display: block;
+}
+ 
+@media (max-width: 576px) {
+    .video-title {
+        font-size: 22px;
+    }
+ 
+    .video-wrapper iframe {
+        height: 220px;
+    }
+}

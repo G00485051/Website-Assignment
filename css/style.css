@@ -1,0 +1,121 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Verdana, sans-serif;
+  background-color: #100d13;
+  color: #ffffff;
+}
+ 
+.logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+ 
+.highlight {
+  color: #6805fb;
+}
+ 
+/* --- Navigation --- */
+.menu {
+  display: flex;
+  gap: 25px;
+}
+ 
+.nav-btn {
+  padding: 4px 20px;
+  border: 0.5px solid #6805fb;
+  border-radius: 9px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+ 
+.nav-btn:hover {
+  box-shadow: 0 0 10px #6805fb, 0 0 25px rgba(104, 5, 251, 0.8);
+}
+ 
+.nav-btn:active {
+  box-shadow: 0 0 10px rgba(104, 5, 251, 0.95);
+  transform: scale(0.98);
+}
+ 
+/* --- Header / Topbar --- */
+.topbar {
+  background-color: #000000;
+  border-bottom: 5px solid #6805fb;
+  position: static;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 0;
+}
+ 
+/* --- Shared Button --- */
+.btn-order {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #6805fb;
+  border-radius: 8px;
+  padding: 12px 26px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+ 
+.btn-order:hover {
+  color: #fff;
+  box-shadow: 0 0 15px #6805fb;
+}
+ 
+ 
+/* ===================== */
+/* === RESPONSIVE ====== */
+/* ===================== */
+ 
+/* Телефон (до 576px) */
+@media (max-width: 576px) {
+  .topbar .container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+ 
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+ 
+  .nav-btn {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+}
+ 
+/* === FOOTER === */
+.site-footer {
+    background-color: #000000;
+    border-top: 3px solid #6805fb;
+    padding: 25px 0;
+    margin-top: 60px;
+}
+ 
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+ 
+.footer-copy {
+    margin: 0;
+    font-size: 14px;
+    color: #aaaaaa;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
