@@ -50,7 +50,7 @@
   resize: none;
 }
  
-/* --- Form Layout --- */
+
 .form-row {
   display: flex;
   gap: 30px;
@@ -64,7 +64,7 @@
   max-width: 140px;
 }
  
-/* --- Submit Button --- */
+
 .submit-btn {
   display: block;
   width: 100%;
