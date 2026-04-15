@@ -40,7 +40,9 @@ body {
   transform: scale(0.98);
 }
  
-/* --- Header / Topbar --- */
+
+
+
 .topbar {
   background-color: #000000;
   border-bottom: 5px solid #6805fb;
@@ -50,7 +52,8 @@ body {
   padding: 20px 0;
 }
  
-/* --- Shared Button --- */
+
+
 .btn-order {
   background: transparent;
   color: #ffffff;
@@ -67,11 +70,9 @@ body {
 }
  
  
-/* ===================== */
-/* === RESPONSIVE ====== */
-/* ===================== */
- 
-/* Телефон (до 576px) */
+
+
+
 @media (max-width: 576px) {
   .topbar .container {
     flex-direction: column;
@@ -91,7 +92,9 @@ body {
   }
 }
  
-/* === FOOTER === */
+
+
+
 .site-footer {
     background-color: #000000;
     border-top: 3px solid #6805fb;
