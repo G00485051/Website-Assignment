@@ -178,23 +178,22 @@
  
 
 
-/* ✓ green, ✗ red */
-.compare-table tbody td:nth-child(2),
-.compare-table tbody td:nth-child(3),
-.compare-table tbody td:nth-child(4) {
-    font-size: 20px;
-}
+
  
-/* Responsive table */
+
 @media (max-width: 576px) {
     .compare-title {
         font-size: 24px;
     }
  
     
-    .compare-table thead th,
-    .compare-table tbody td {
-        padding: 10px 10px;
-        font-size: 13px;
-    }
+   .compare-table thead th {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.compare-table tbody td {
+    padding: 10px;
+    font-size: 13px;
+}
 }
