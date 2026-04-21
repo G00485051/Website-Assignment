@@ -73,9 +73,6 @@
   font-size: 20px;
 }
  
- 
-
-
 
 @media (max-width: 992px) {
   .hero-box {
@@ -160,6 +157,18 @@
  
 .video-wrapper iframe {
     display: block;
+}
+
+.video-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
 }
  
 @media (max-width: 576px) {
